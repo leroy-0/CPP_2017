@@ -1,0 +1,27 @@
+//
+// Created by longle_h on 04/10/2017.
+//
+
+#ifndef PROJECT_DBMONGO_HPP
+#define PROJECT_DBMONGO_HPP
+
+#include "IDBManager.hpp"
+//#include <bsoncxx/builder/stream/document.hpp>
+#include <bsoncxx/json.hpp>
+#include <mongocxx/client.hpp>
+#include <mongocxx/instance.hpp>
+
+namespace spider
+{
+    class DBMongo : public IDBManager
+    {
+    public:
+        DBMongo();
+        ~DBMongo();
+
+        bool insert(const std::string & insert);
+        bool init();
+    };
+}
+
+#endif //PROJECT_DBMONGO_HPP

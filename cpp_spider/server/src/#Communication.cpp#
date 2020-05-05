@@ -1,0 +1,37 @@
+//
+// Created by Yan on 9/29/2017.
+//
+
+#include <iostream>
+#include "Communication.hpp"
+
+spider::Communication::Communication() :
+    buffer(""), fileName("")
+{}
+
+spider::Communication::~Communication(){}
+
+void                spider::Communication::init(std::string ip)
+{
+    this->fileName  = LOG_DIR + ip + ".log";
+    std::cout << "Created " << this->fileName << std::endl;
+    this->log.open(this->fileName, std::fstream::in | std::fstream::out | std::fstream::app);
+}
+
+void                spider::Communication::parseBuffer()
+{
+    this->log << this->buffer << std::endl;
+}
+
+void                spider::Communication::addData(std::string read)
+{
+    this->buffer.append(read);
+    if (this->buffer.back() == '\n')
+    {
+        this->buffer[buffer.length() - 2] = '\0';
+        this->buffer[buffer.length() - 1] = '\0';
+        std::cout << "Adding buffer : " << this->buffer << std::endl;
+        this->parseBuffer();
+        this->buffer.clear();
+    }
+}

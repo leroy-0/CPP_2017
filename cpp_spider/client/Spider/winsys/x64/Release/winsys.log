@@ -1,0 +1,9 @@
+﻿  WindowsClient.cpp
+  Génération de code en cours
+c:\users\maxime1907\documents\tek3\cpp_spider\client\spider\winsys\comunication.cpp(185): warning C4715: 'Comunication::connect' : les chemins de contrôle ne retournent pas tous une valeur
+  662 of 1273 functions (52.0%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    23 functions had inline decision re-evaluated but remain unchanged
+  Fin de la génération du code
+  winsys.vcxproj -> C:\Users\maxime1907\Documents\Tek3\cpp_spider\client\Spider\x64\Release\winsys.exe
+  winsys.vcxproj -> C:\Users\maxime1907\Documents\Tek3\cpp_spider\client\Spider\x64\Release\winsys.pdb (Full PDB)

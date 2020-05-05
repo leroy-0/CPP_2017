@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "r-type_client", "r-type_client\r-type_client.vcxproj", "{CED88048-2768-46D3-9C63-36EA4ECD93B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CED88048-2768-46D3-9C63-36EA4ECD93B2}.Release|x64.ActiveCfg = Release|x64
+		{CED88048-2768-46D3-9C63-36EA4ECD93B2}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1F85966-892D-48F8-A143-3A46BD3E1643}
+	EndGlobalSection
+EndGlobal

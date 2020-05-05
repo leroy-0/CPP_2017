@@ -1,0 +1,95 @@
+﻿  dllmain.cpp
+  Spider.cpp
+c:\users\user\documents\git\cpp_spider\client\spider\dll\spider.cpp(2): fatal error C1083: Impossible d'ouvrir le fichier include : 'LinuxClient.h' : No such file or directory
+  LinuxClient.cpp
+c:\users\user\documents\git\cpp_spider\client\spider\dll\linuxclient.cpp(2): fatal error C1083: Impossible d'ouvrir le fichier include : 'LinuxClient.h' : No such file or directory
+  Comunication.cpp
+c:\users\user\documents\git\cpp_spider\client\spider\dll\comunication.cpp(6): fatal error C1083: Impossible d'ouvrir le fichier include : 'boost/array.hpp' : No such file or directory
+  Génération de code en cours...
+  Compilation en cours...
+  TaskManager.cpp
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(11): error C2065: 'injected' : identificateur non déclaré
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(13): error C2065: 'injected' : identificateur non déclaré
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(14): error C2065: 'keylogDllPath' : identificateur non déclaré
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(23): error C2511: 'const std::string TaskManager::getKeylogDllPath(void)' : impossible de trouver la fonction membre surchargée dans 'TaskManager'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.h(13): note: voir la déclaration de 'TaskManager'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(32): error C2511: 'Process &TaskManager::getProcess(void)' : impossible de trouver la fonction membre surchargée dans 'TaskManager'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.h(13): note: voir la déclaration de 'TaskManager'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(33): error C2597: référence non conforme à un membre non static 'TaskManager::process'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(37): error C2511: 'bool TaskManager::isInjected(void)' : impossible de trouver la fonction membre surchargée dans 'TaskManager'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.h(13): note: voir la déclaration de 'TaskManager'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(38): error C2065: 'injected' : identificateur non déclaré
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(42): error C2511: 'bool TaskManager::injectDll(const std::string &,unsigned int)' : impossible de trouver la fonction membre surchargée dans 'TaskManager'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.h(13): note: voir la déclaration de 'TaskManager'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(67): error C2511: 'bool TaskManager::hide(const std::string &)' : impossible de trouver la fonction membre surchargée dans 'TaskManager'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.h(13): note: voir la déclaration de 'TaskManager'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(68): error C2671: 'TaskManager::hide' : les fonctions membres static n'ont pas de pointeurs 'this'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(68): error C2227: la partie gauche de '->injectDll' doit pointer vers un type class/struct/union/générique
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(68): error C2065: 'keylogDllPath' : identificateur non déclaré
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(68): error C2228: la partie gauche de '.getProcessIdByProcessName' doit avoir un class/struct/union
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(72): error C2556: 'void TaskManager::run(void)' : la fonction surchargée ne diffère que par le type de retour de 'bool TaskManager::run(void)'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.h(30): note: voir la déclaration de 'TaskManager::run'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.cpp(71): error C2371: 'TaskManager::run' : redéfinition ; types de base différents
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\taskmanager.h(30): note: voir la déclaration de 'TaskManager::run'
+  Process.cpp
+c:\users\user\documents\git\cpp_spider\client\spider\dll\process.cpp(36): error C2511: 'void Process::hideWindow(void)' : impossible de trouver la fonction membre surchargée dans 'Process'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\process.h(6): note: voir la déclaration de 'Process'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\process.cpp(44): error C2511: 'std::string Process::getProcessPath(unsigned int)' : impossible de trouver la fonction membre surchargée dans 'Process'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\process.h(6): note: voir la déclaration de 'Process'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\process.cpp(75): error C2511: 'std::string Process::getActiveWindowTitle(void)' : impossible de trouver la fonction membre surchargée dans 'Process'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\process.h(6): note: voir la déclaration de 'Process'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\process.cpp(84): error C2511: 'unsigned int Process::getProcessIdByProcessName(const std::string &)' : impossible de trouver la fonction membre surchargée dans 'Process'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\process.h(6): note: voir la déclaration de 'Process'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\process.cpp(108): error C2511: 'unsigned int Process::getProcessIdByWindowName(const std::string &)' : impossible de trouver la fonction membre surchargée dans 'Process'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\process.h(6): note: voir la déclaration de 'Process'
+  Mouse.cpp
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(34): error C2511: 'std::string Mouse::getCursorPos(void)' : impossible de trouver la fonction membre surchargée dans 'Mouse'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.h(7): note: voir la déclaration de 'Mouse'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(43): error C2039: 'manageClicks' : n'est pas membre de 'Mouse'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.h(7): note: voir la déclaration de 'Mouse'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(48): error C2065: 'clickNames' : identificateur non déclaré
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(48): error C2228: la partie gauche de '.begin' doit avoir un class/struct/union
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(48): note: le type est 'unknown-type'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(48): error C3536: 'it' : ne peut pas être utilisé avant d'avoir été initialisé
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(48): error C2228: la partie gauche de '.end' doit avoir un class/struct/union
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(48): note: le type est 'unknown-type'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(52): error C2100: indirection non conforme
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(52): error C2088: '+' : non conforme pour class
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(53): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(53): error C2227: la partie gauche de '->getCursorPos' doit pointer vers un type class/struct/union/générique
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(60): error C2373: 'Mouse::manageMoves' : redéfinition ; modificateurs de type différents
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.h(16): note: voir la déclaration de 'Mouse::manageMoves'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(82): error C2373: 'Mouse::readMouse' : redéfinition ; modificateurs de type différents
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.h(17): note: voir la déclaration de 'Mouse::readMouse'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(87): error C2039: 'manageClicks' : n'est pas membre de 'Mouse'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.h(7): note: voir la déclaration de 'Mouse'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\mouse.cpp(95): error C2228: la partie gauche de '.empty' doit avoir un class/struct/union
+  Keyboard.cpp
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.cpp(37): error C2511: 'void Keyboard::getMajState(unsigned char *)' : impossible de trouver la fonction membre surchargée dans 'Keyboard'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.h(5): note: voir la déclaration de 'Keyboard'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.cpp(38): error C2597: référence non conforme à un membre non static 'Keyboard::lockOn'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.cpp(38): error C3867: 'Keyboard::lockOn' : syntaxe non-standard ; utilisez '&' pour créer un pointeur vers un membre
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.cpp(38): error C2109: un indice requiert un type tableau ou pointeur
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.cpp(38): error C2597: référence non conforme à un membre non static 'Keyboard::capital'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.cpp(38): error C3867: 'Keyboard::capital' : syntaxe non-standard ; utilisez '&' pour créer un pointeur vers un membre
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.cpp(67): error C2373: 'Keyboard::manageKeys' : redéfinition ; modificateurs de type différents
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.h(13): note: voir la déclaration de 'Keyboard::manageKeys'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.cpp(96): error C2373: 'Keyboard::readKey' : redéfinition ; modificateurs de type différents
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\keyboard.h(12): note: voir la déclaration de 'Keyboard::readKey'
+  KeyLogger.cpp
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(29): error C2511: 'std::string KeyLogger::getFormatedTime(const std::string &)' : impossible de trouver la fonction membre surchargée dans 'KeyLogger'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.h(10): note: voir la déclaration de 'KeyLogger'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(42): error C2511: 'std::string KeyLogger::getFormatedOutput(void)' : impossible de trouver la fonction membre surchargée dans 'KeyLogger'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.h(10): note: voir la déclaration de 'KeyLogger'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(54): error C2671: 'KeyLogger::getFormatedOutput' : les fonctions membres static n'ont pas de pointeurs 'this'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(54): error C2227: la partie gauche de '->getFormatedTime' doit pointer vers un type class/struct/union/générique
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(66): error C2511: 'void KeyLogger::write(const std::string &)' : impossible de trouver la fonction membre surchargée dans 'KeyLogger'
+  c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.h(10): note: voir la déclaration de 'KeyLogger'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(71): error C2671: 'KeyLogger::write' : les fonctions membres static n'ont pas de pointeurs 'this'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(71): error C2227: la partie gauche de '->getFormatedTime' doit pointer vers un type class/struct/union/générique
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(72): error C2671: 'KeyLogger::write' : les fonctions membres static n'ont pas de pointeurs 'this'
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(72): error C2227: la partie gauche de '->getFormatedTime' doit pointer vers un type class/struct/union/générique
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(73): error C2228: la partie gauche de '.getProcessPath' doit avoir un class/struct/union
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(73): error C2228: la partie gauche de '.getProcessIdByWindowName' doit avoir un class/struct/union
+c:\users\user\documents\git\cpp_spider\client\spider\dll\keylogger.cpp(73): error C2228: la partie gauche de '.getActiveWindowTitle' doit avoir un class/struct/union
+  Génération de code en cours...

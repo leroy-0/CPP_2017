@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AsioTcpConnection.hpp" />
+    <ClInclude Include="include\AsioUdpConnection.hpp" />
+    <ClInclude Include="include\Clock.hpp" />
+    <ClInclude Include="include\Component\AComponent.hpp" />
+    <ClInclude Include="include\Component\Audio.hpp" />
+    <ClInclude Include="include\Component\Collider.hpp" />
+    <ClInclude Include="include\Component\Graphics.hpp" />
+    <ClInclude Include="include\Component\Input.hpp" />
+    <ClInclude Include="include\Component\ObjectFactory.hpp" />
+    <ClInclude Include="include\Component\Physics.hpp" />
+    <ClInclude Include="include\Component\Position.hpp" />
+    <ClInclude Include="include\Component\UI.hpp" />
+    <ClInclude Include="include\ConnectionCreate.hpp" />
+    <ClInclude Include="server\include\Engine.hpp" />
+    <ClInclude Include="include\Entity.hpp" />
+    <ClInclude Include="include\GameManager.hpp" />
+    <ClInclude Include="include\ICharacter.hpp" />
+    <ClInclude Include="include\IConnection.hpp" />
+    <ClInclude Include="include\IEnemy.hpp" />
+    <ClInclude Include="include\IEntity.hpp" />
+    <ClInclude Include="include\IGame.hpp" />
+    <ClInclude Include="include\locked_queue.hpp" />
+    <ClInclude Include="include\Manager.hpp" />
+    <ClInclude Include="include\Network.hpp" />
+    <ClInclude Include="include\Parse.hpp" />
+    <ClInclude Include="include\Rules.hpp" />
+    <ClInclude Include="include\Server.hpp" />
+    <ClInclude Include="include\ServerSideManager.hpp" />
+    <ClInclude Include="include\System\ASystem.hpp" />
+    <ClInclude Include="include\System\AudioSystem.hpp" />
+    <ClInclude Include="include\System\ColliderSystem.hpp" />
+    <ClInclude Include="include\System\GraphicsSystem.hpp" />
+    <ClInclude Include="include\System\IASystem.hpp" />
+    <ClInclude Include="include\System\InputSystem.hpp" />
+    <ClInclude Include="include\System\ObjectFactorySystem.hpp" />
+    <ClInclude Include="include\System\PhysicsSystem.hpp" />
+    <ClInclude Include="server\include\System\UISystem.hpp" />
+    <ClInclude Include="include\UuidGenerator.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AsioTcpConnection.cpp" />
+    <ClCompile Include="src\AsioUdpConnection.cpp" />
+    <ClCompile Include="src\Clock.cpp" />
+    <ClCompile Include="src\ConnectionCreate.cpp" />
+    <ClCompile Include="src\Engine.cpp" />
+    <ClCompile Include="src\Entity.cpp" />
+    <ClCompile Include="src\GameManager.cpp" />
+    <ClCompile Include="src\ICharacter.cpp" />
+    <ClCompile Include="src\IEnemy.cpp" />
+    <ClCompile Include="src\IEntity.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Manager.cpp" />
+    <ClCompile Include="src\Network.cpp" />
+    <ClCompile Include="src\Parse.cpp" />
+    <ClCompile Include="src\Server.cpp" />
+    <ClCompile Include="src\ServerSideManager.cpp" />
+    <ClCompile Include="src\System\ASystem.cpp" />
+    <ClCompile Include="src\System\AudioSystem.cpp" />
+    <ClCompile Include="src\System\ColliderSystem.cpp" />
+    <ClCompile Include="src\System\GraphicsSystem.cpp" />
+    <ClCompile Include="src\System\IASystem.cpp" />
+    <ClCompile Include="src\System\InputSystem.cpp" />
+    <ClCompile Include="src\System\ObjectFactorySystem.cpp" />
+    <ClCompile Include="src\System\PhysicsSystem.cpp" />
+    <ClCompile Include="src\System\UISystem.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0993238A-9B7F-4F41-A3DD-251A47CC258D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>server</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\epitech\cpp_rtype\server\include\System;C:\epitech\cpp_rtype\server\include\Component;C:\epitech\cpp_rtype\server\include;C:\epitech\lib\boost_1_66_0\boost_1_66_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\epitech\lib\boost_1_66_0\boost_1_66_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\epitech\cpp_rtype\server\include\System;C:\epitech\cpp_rtype\server\include\Component;C:\epitech\cpp_rtype\server\include;C:\epitech\lib\boost_1_66_0\boost_1_66_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\epitech\lib\boost_1_66_0\boost_1_66_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\epitech\cpp_rtype\server\include\System;C:\epitech\cpp_rtype\server\include\Component;C:\epitech\cpp_rtype\server\include;C:\epitech\lib\boost_1_66_0\boost_1_66_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\epitech\lib\boost_1_66_0\boost_1_66_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\epitech\cpp_rtype\server\include\System;C:\epitech\cpp_rtype\server\include\Component;C:\epitech\cpp_rtype\server\include;C:\epitech\lib\boost_1_66_0\boost_1_66_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\epitech\lib\boost_1_66_0\boost_1_66_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\epitech\lib\boost_1_66_0\boost_1_66_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\epitech\lib\boost_1_66_0\boost_1_66_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\epitech\lib\boost_1_66_0\boost_1_66_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\epitech\lib\boost_1_66_0\boost_1_66_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
